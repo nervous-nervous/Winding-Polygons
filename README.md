@@ -37,12 +37,11 @@ we will test each segment of polygon whether intersecting with the ray with the 
 According to the ray, if the segment is from up to down we denote it as -1,  from up to down we denote it as 1, then calculate the sum of all intersecting segments.
 ![](method2.png)
 
-## how to use
-(This is an original version)
+## how to use (This is an original version)
 1st step:
 People will use mouse to locate the point in canvas, and the program will generate the line between the node automatically, When people push the Finish Polygon button, the program will generate the segment between the first and the last point.  
 2nd step:
 People will set up the viewpoint after push the viewpoint button.
 3rd step:
 People push the Start button to start calculate the winding number.
-![](demo1.png)
+![](demo1.PNG)
