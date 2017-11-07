@@ -28,6 +28,6 @@ In mathematics, the winding number of a closed curve in the plane around a given
 
 ## Algorithm we will use
 * method 1
-![这里写图片描述](Green_lantern.png=100x100)
+<img src="method1.png" width="200px" />
 * method 2
-<img src="Green_lantern.png" width="200px" />
+<img src="method2.png" width="200px" />
