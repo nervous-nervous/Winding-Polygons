@@ -25,3 +25,8 @@ In mathematics, the winding number of a closed curve in the plane around a given
 * ~~JavaScript(Jquery) and HTML5 Canvas~~(this version may generate later)
 
 * Processing
+
+## Algorithm we will use
+* method 1
+
+* method 2
