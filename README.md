@@ -30,3 +30,4 @@ In mathematics, the winding number of a closed curve in the plane around a given
 * method 1
 ![这里写图片描述](Green_lantern.png=100x100)
 * method 2
+<img src="Green_lantern.png" width="200px" />
