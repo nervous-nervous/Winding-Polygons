@@ -28,5 +28,5 @@ In mathematics, the winding number of a closed curve in the plane around a given
 
 ## Algorithm we will use
 * method 1
-
+![这里写图片描述](Green_Lantern.jpg)
 * method 2
