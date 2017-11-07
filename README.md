@@ -28,6 +28,6 @@ In mathematics, the winding number of a closed curve in the plane around a given
 
 ## Algorithm we will use
 * method 1
-<img src="method1.png" width="200px" />
+![](method1.png)
 * method 2
-<img src="method2.png" width="200px" />
+![](method2.png)
