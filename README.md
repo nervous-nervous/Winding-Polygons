@@ -22,5 +22,6 @@ In mathematics, the winding number of a closed curve in the plane around a given
 * Shaoyan He : shaoyan.he@uconn.edu
 
 ## Tools:
-* JavaScript(Jquery)
-* HTML5 Canvas
+* ~~JavaScript(Jquery) and HTML5 Canvas~~(this version may generate later)
+
+* Processing
