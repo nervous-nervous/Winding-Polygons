@@ -1,4 +1,4 @@
-# Winding-Polygons <img src="Green_lantern.png" width="60px" />
+# <img src="Green_lantern.png" width="30px" /> Winding-Polygons 
 
 ## Course project for CG 2017
 
