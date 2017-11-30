@@ -22,7 +22,7 @@ In mathematics, the winding number of a closed curve in the plane around a given
 * Shaoyan He : shaoyan.he@uconn.edu
 
 ## Tools:
-* ~~JavaScript(Jquery) and HTML5 Canvas~~(this version may generate later)
+* html p5.js and some other js library
 
 * Processing
 
@@ -45,3 +45,6 @@ People will set up the viewpoint after push the viewpoint button.
 * 3rd step:
 People push the Start button to start calculate the winding number.
 ![](demo1.PNG)
+
+## view online:
+http://htmlpreview.github.io/?https://github.com/ZQlalala/Winding-Polygons/blob/master/index.html
