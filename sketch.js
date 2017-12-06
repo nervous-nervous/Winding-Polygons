@@ -68,7 +68,7 @@ function draw() {
 }
 
 function mouseClicked(){
-	if (mouseX > 0 && mouseX < 1600 && mouseY > 0 && mouseY < 900){
+	if (mouseX > 0 && mouseX < 900 && mouseY > 0 && mouseY < 900){
 		if (flag == 0){
 			if ( abs(mouseX-x[0])<=5&&abs(mouseY-y[0])<=5){
 				flag = 1;
