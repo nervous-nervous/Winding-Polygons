@@ -4,6 +4,7 @@ var ax;
 var ay;
 var n = 0;
 var flag = 0;
+var pick_point = 0 ;
 var Wn;
 
 function setup() {
@@ -21,6 +22,7 @@ function resetSketch(){
   y= [];
   flag = 0;
   n = 0;
+  pick_point = 0 ;
 
  }
 
@@ -28,10 +30,10 @@ function resetWatcher(){
     flag = 1;
   }
  function keyTyped() {
-   if (key === 'a') {
+   if (key == 'a') {
      resetSketch();
    }
-   if (key === 'b') {
+   if (key == 'b') {
      resetWatcher();
    }
    // uncomment to prevent any default behavior
@@ -42,7 +44,16 @@ function resetWatcher(){
 function draw() {
   // put drawing code here
   background(220);
+  line(0,100,width,100)
+  text("1.draw", 10,height/10)
+  text("Restart : a ", 10,height/10-20)
+  text("winding number: ", 7*(width/8)-200, height/10);
+ 
   fill(0);
+  if(pick_point == 1)
+    {
+    	text("-> 2. pick any point ", 50, height/10);
+    }
   //keyIsDown(e);
     //button.mouseClicked(changeBG);
   if (n != 0){
@@ -54,14 +65,13 @@ function draw() {
 	}
   if (flag>1){
 	  ellipse(ax, ay, 10, 10);
-	  textAlign(CENTER);
-	  textSize(32);
+	  //textAlign(CENTER);
       	  if (Wn == 0.5){
 		text("Don't put the point on a line! Please choose a new point.", width/2, height/2);
 		flag = 3;
 	  }
 	  else
-	      text("The Winding Number is " + Wn, width/2, height/2);
+	      text( Wn, 7*(width/8)-100, height/10);
   }
 
 
@@ -75,6 +85,7 @@ function mouseClicked(){
 				x[n] = x[0];
 				y[n] = y[0];
 				n++
+				pick_point++;
 			}
 			else{
 				x[n] = mouseX;
