@@ -213,7 +213,7 @@ var a2 = function( p )
         p.fill(0);
     if(pick_point == 1)
         {
-            p.text("-> 2. picsk any point ", 50, p.height/10);
+            p.text("-> 2. pick any point ", 50, p.height/10);
         }
     //keyIsDown(e);
         //button.mouseClicked(changeBG);
