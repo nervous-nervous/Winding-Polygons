@@ -5,9 +5,11 @@ var ay;
 var n = 0;
 var flag = 0;
 var left = new Array();
+var pick_point = 0 ;
 function setup() {
   // put setup code here
-  createCanvas(1000, 800);
+  var canvas2 = createCanvas(1000, 800);
+  canvas2.parent('sketch-holder2');
 //v1 = createVector(40, 50);
  //v2 = createVector(100, 50);
 
@@ -17,7 +19,7 @@ function resetSketch(){
   y= [];
   flag = 0;
   n = 0;
-
+  pick_point = 0 
  }
 
 function resetWatcher(){
@@ -36,7 +38,16 @@ function resetWatcher(){
 
 function draw(){
   background(220);
+  line(0,100,width,100)
+  text("1.draw", 10,height/10)
+  text("Restart : a ", 10,height/10-20)
+  text("winding number: ", 7*(width/8)-200, height/10);
+
   fill(0);
+    if(pick_point == 1)
+    {
+      text("-> 2. pick any point ", 50, height/10);
+    }
   //keyIsDown(e);
     //button.mouseClicked(changeBG);
   if (n != 0){
@@ -48,10 +59,10 @@ function draw(){
 	}
   if (flag>1){
 	  ellipse(ax, ay, 10, 10);
-	  textAlign(CENTER);
-	  textSize(32);
+	  //textAlign(CENTER);
+	  //textSize(32);
     //var angle = angle_sum (ax, ay, x, y, n)
-    text(parseInt(angle_sum(ax, ay, x, y, n)/359), width/2, height/2);
+    text(parseInt(angle_sum(ax, ay, x, y, n)/359), 7*(width/8)-100, height/10);
   }
   //text(angle,200,200);
 }
@@ -64,6 +75,7 @@ function mouseClicked(){
 		 y[n] = y[0];
      text(n, x[0], y[0]);
 		 n++
+     pick_point++;
 	 }
 	 else{
 		x[n] = mouseX;
@@ -142,4 +154,3 @@ function angle_sum(ax,ay,x,y,n){
   //angle_sum = angle_sum + angle_alc(ax,ay,x[n-1],y[n-1],x[0],y[0]);
   return angle_sum;
 }
-
