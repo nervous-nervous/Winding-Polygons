@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Winding Polygon</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.2.1/jquery.fullPage.js"></script>
+
+    <!--引用fullpage.js-->
+    <script src="http://apps.bdimg.com/libs/jquery-fullPage/2.7.4/jquery.fullPage.min.js"></script>
+  <!--引用fullpage.js样式表-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/fullPage.js/2.8.9/jquery.fullPage.css">
+
+    <script src="/Users/hsiang/Documents/p5-4/p5.min.js"></script>
+    <script src="/Users/hsiang/Documents/p5-4/addons/p5.dom.js"></script>
+    <script src="/Users/hsiang/Documents/p5-4/addons/p5.sound.min.js"></script>
+    
+
+    <script  src="/Users/hsiang/Documents/p5-4/empty-example/sketch_4.js"></script>
+
+
+  </head>
+
+  <style>
+    .section{
+      text-align: center;
+    }
+    h1{
+      font-size: 30px;
+      font-style: italic;
+    }
+    .slide{
+      font-size: #;
+      text-align: center;
+    }
+    .section1{
+      background-color: inherit;
+    }
+    .section2{
+    }
+    .section3{
+    }
+    .section4{
+    }
+    .section5{
+    }
+    .section6{
+    }
+  </style>
+  <body>
+    <div id="fullpage">
+      <div class="section section3">
+      <!-- Algorithm A & B -->
+        <div class="slide">
+          <h1>Algorithm 1 intro</h1>
+        </div>
+        <div class="slide">
+          <h1>Algorithm 2 intro</h1>
+        </div>
+      </div>
+      <div class="section section4">
+      <!-- program A & B -->
+          <div class="slide">
+            <h1>Algorithm 1</h1>
+          </div>
+          <div class="slide">
+
+            <div id="c1">
+              <!-- Our sketch will go here! -->
+            </div>
+            <h1>Program here 1</h1>
+          </div>
+      </div>
+      <div class="section section5">
+      <!-- program A & B -->
+          <div class="slide">
+            <h1>Algorithm 2</h1>
+          </div>
+          <div class="slide">
+            <div id="c2">
+              <!-- Our sketch will go here! -->
+            </div>
+
+          </div>
+      </div>
+      <div class="section section6">
+      <!-- Thanks -->
+          <h1>Thank you all</h1>
+          <h3>finish a great semester together</h3>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        $('#fullpage').fullpage();
+      }
+    );
+    </script>
+  </body>
+</html>
