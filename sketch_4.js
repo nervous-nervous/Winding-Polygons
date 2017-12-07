@@ -11,7 +11,7 @@ var a1 = function( p ){
     var pick_point = 0 ;
     p.setup = function() {
     // put setup code here
-    p.createCanvas(1000, 800);
+    p.createCanvas(900, 900);
     //canvas2.parent('sketch-holder2');
     //v1 = createVector(40, 50);
     //v2 = createVector(100, 50);
@@ -75,6 +75,7 @@ var a1 = function( p ){
     }
 
     p.mouseClicked = function(){
+        if (p.mouseX > 0 && p.mouseX < 900 && p.mouseY > 0 && p.mouseY < 900){
         if(flag == 0){
         if ( p.abs(p.mouseX-x[0])<=5&& p.abs(p.mouseY-y[0])<=5){
             flag = 1;
@@ -101,6 +102,7 @@ var a1 = function( p ){
             n = 0;
 
         }
+       }
     }
 
     p.ccw = function(x0, y0, x1, y1, x2, y2){
